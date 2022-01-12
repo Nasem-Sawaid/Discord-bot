@@ -48,7 +48,7 @@ async def on_member_join(member):
 async def on_message(message):
     id = client.get_guild(734912759359340835)
     ch_server = ["general-chat", "mods-room", "graba", "logs", "server-level", "test"]
-    bad_words = ["nigga", "shrmota", "kos amk", "bad"]
+    bad_words = ["noob", "wath", "another bad", "bad"]
     for word in bad_words:
         if message.content.count(word) > 0:
             await message.channel.purge(limit=1)
